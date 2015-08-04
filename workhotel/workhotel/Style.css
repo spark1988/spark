@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+body, html {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	}
+ body {
+ background-image:url(img/bg_w.jpg);
+  font-family:'PT Sans Narrow','Arial Narrow',Arial;
+  }
+  .gray {
+  background-image:url(img/bg_gr.jpg);
+  padding:10px 0px 40px 0px;
+  min-width:1000px;
+
+  }
+  .content {
+  width:900px;
+  margin:0px auto;
+  }
+  
+  .footer {
+  background-color: #CCFF99;
+  height:50px;
+  padding:10px 0px;
+  color:#000033;
+  font-size:14px;
+  min-width:1000px;
+  }
+  .menu td { 
+   background-color:#303030;
+   height:60px; 
+   text-align:center;
+   }
+   .menu a {
+   color: #009900;
+   text-decoration: none; 
+   font-size:24px;
+   }
+   .menu a:hover {
+   color: #FF3300;
+   }
+   .vline {
+   border-left: #006600 1px solid;
+   }
+   .noborder {
+   border:none;
+   }
+   .tel {
+   text-align: right;
+   vertical-align:top;
+   font-size:36px;
+   color: #0000FF;
+   }
+ .adress {
+ text-align:right;
+ font-size:16px; 
+ padding:5px 0px;
+ }
+.showb {
+text-align:center;
+padding-top:10px;
+}
+.showb img {
+border: #000033 8px solid;
+box-shadow:#333 0px 0px 15px;
+}
+h1,h2 {
+font-weight:normal;
+margin:5px 0px;
+}
+.block1 {
+width: 180px;
+margin-right:20px; 
+float: left
+}
+
+
+.clear {
+clear:both
+}
+.roomblock { 
+padding-bottom:20px;
+}
+.button {
+display: block;
+background-color: #000033;
+color:#FF0033; 
+text-decoration:none;
+width:100px; 
+height:30px;
+line-height:30px;
+font-size:18px;
+text-align:center; 
+margin-top:10px;
+border-radius:7px;
+-moz-transition:all 2s ease;
+-o-transition:all 2s ease;
+-webkit-transition:all 2s ease;
+
+}
+.button:hover { 
+background-color:#CC0033;
+color:#0000CC;
+}
+.up {
+text-align:right;
+padding:10px 0px;
+}
+.up a{
+color:#006600;
+font-variant: small-caps;
+}
+.up a:hover {
+color:#000099;
+}
+.showb ul {
+list-style-type:none;
+margin:0px auto;
+padding:0px;
+position:relative;
+display:block;
+width:716px;
+height:516px;
+}
+.showb li {
+	display:block;
+	position: absolute;
+}
+.border {border-bottom:#CC3300 2px solid;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#CC3300;
+}
+.map {
+margin-top:25px;
+width:600px;
+height:px;
+}
+
+.block23 {
+float:left;
+	text-align:left;
+	font-size: 18px;
+	margin-left:40px;
+	border:4px #000033 solid;
+	}
+.numbers {
+padding-left:30px;
+
+	}
+.india a{
+border:3px #CCCC00 solid;
+}
+.numbers img {
+border:5px #006600 solid;
+}
+
+/*.showb img {
+height:380px;
+width:650px;
+}*/
