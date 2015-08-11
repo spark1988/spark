@@ -1,0 +1,195 @@
+/*1 задание*/ 
+<?
+$animals = array("cat","dog","elephant","chicken");
+
+
+foreach($animals as $a)
+{
+    echo ""<h1>$a, <br></h1>";
+}
+
+?>
+/*2 задание*/ 
+function foo($action, ...$num)
+    {
+        if(is_string(func_get_arg(0))){
+            function calculate($array_with_numbers, $doit) {
+    echo "<h3>".calculate . " $doit</h3><br>";
+    if(is_array($array_with_numbers)) {
+        $restore = 0;
+        switch($doit) {
+            case '+':
+                foreach ($array_with_numbers as $number) $restore += $number;
+                break;
+            case '-':
+                foreach ($array_with_numbers as $number) $restore -= $number;
+                break;
+            case '*':
+                $restore = 1;
+                foreach ($array_with_numbers as $number) $restore *= $number;
+                break;
+            case '/':
+                $restore = $array_with_numbers[0];
+                for ($i = 1; $i < count($array_with_numbers); $i++)
+                    if ($array_with_numbers[$i] != 0)
+                        $restore /= $array_with_numbers[$i];
+                break;
+            case '%':
+                $restore = $array_with_numbers[0];
+                for ($i = 1; $i < count($array_with_numbers); $i++)
+                    if ($array_with_numbers[$i] != 0)
+                        $restore %= $array_with_numbers[$i];
+                break;
+            default:
+                echo "Please type '+','-','*','%'!"<br>";
+        }
+        echo $restore . "<br>";
+    }
+        }else{
+            echo 'Something went wrong';
+        }
+    }
+    foo('-',1,2,3,4);
+
+
+/*3 задание*/
+
+<?
+function calculate($array_with_numbers, $doit) {
+    echo "<h3>".__FUNCTION__. " $doit</h3><br>";
+    if(is_array($array_with_numbers)) {
+        $restore = 0;
+        switch($doit) {
+            case '+':
+                foreach ($array_with_numbers as $number) $restore += $number;
+                break;
+            case '-':
+                foreach ($array_with_numbers as $number) $restore -= $number;
+                break;
+            case '*':
+                $restore = 1;
+                foreach ($array_with_numbers as $number) $restore *= $number;
+                break;
+            case '/':
+                $restore = $array_with_numbers[0];
+                for ($i = 1; $i < count($array_with_numbers); $i++)
+                    if ($array_with_numbers[$i] != 0)
+                        $restore /= $array_with_numbers[$i];
+                break;
+            case '%':
+                $restore = $array_with_numbers[0];
+                for ($i = 1; $i < count($array_with_numbers); $i++)
+                    if ($array_with_numbers[$i] != 0)
+                        $restore %= $array_with_numbers[$i];
+                break;
+            default:
+                echo "Please type '+','-','*','%'!<br>";
+        }
+        echo $restore . "<br>";
+    }
+    else
+        echo "Something went wrong";
+}
+
+function putInNumbersHere(){
+				$arrayArg=func_get_args();
+				$act=func_get_arg(0);
+				array_shift($arrayArg);
+				calculate($arrayArg, $act);
+				}
+putInNumbersHere('/',100,2,2);
+
+?>
+
+
+/*4 задание*/
+<?
+    function table($cols,$rows)
+    {
+        if (is_int($cols) && is_int($rows)) {
+            echo '<table border="1" cellpadding="40">';
+            for ($i = 1; $i <= $rows; ++$i) {
+                if($i==1){
+                    echo '<tr bgcolor="#CFE2F3">';
+                }else{
+                    echo '<tr>';
+                }
+                for ($j = 1; $j <= $cols; ++$j){
+                    if($j==1){
+                        echo '<td bgcolor="#ccc">', $i*$j, '</td>';
+                    }else{
+                        echo '<td>', $i*$j, '</td>';
+                    }
+                }
+                echo '</tr>';
+            }
+            echo '<table>';
+        }else{
+            echo 'Arguments must be celimi';
+        }
+
+    }
+
+   table(8,8);
+?>
+
+
+
+
+/*5 задание*/ 
+<?
+$arr = array(1, 22, 5, 66, 3, 57);
+sort($arr);
+for($i=0; $i < count($arr); $i++)
+{
+    echo ("$arr[$i] ");
+    //выводит 1, 3, 5, 22, 57, 66
+}
+?>
+
+/*6 задание*/
+
+<?
+function foo_odd($a, $b)
+{
+    // Если достигли ограничителя - пришла пора выйти из рекурсии
+    if ($a >= $b)
+    {
+        return;
+    }
+
+    // Проверяем, что число нечетное
+    if ($a % 2 != 0)
+    {
+        echo "<h4>$a <hr><br></h4>";
+
+        // Этот код не будет работать
+        // Если изначально вызвать функцию с четным первым аргументом, рекурсия никогда не начнется
+        // foo_odd($a + 2, $b);
+    }
+
+    // Рекурсивно вызываем функцию, увеличивая число
+    foo_odd($a + 1, $b);
+}
+
+foo_odd(10, 35);
+
+?>
+
+/*7 задание*/ 
+<? function pal($word)
+    {
+        if(is_string($word))
+        {
+            $reverse = strrev($word);
+            
+            if ($word == $reverse)
+                echo "<h1>$word is polindrome type</h1>";
+            else
+                echo "<h1>$word isn't a polindrome type</h1>";
+        }
+    }
+$word = "Rotor";
+$word = strtoupper($word);
+pal($word);
+?>
