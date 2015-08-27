@@ -1,0 +1,60 @@
+<div class="jumbotron">
+       <div class="container-fluid container-jumbotron">
+       <div class="row-fluid">
+       <div class="col-md-6 col-sm-6 col-xs-6 hidden-md hidden-xs hidden-sm  rjd"><h1><img src="images/%D0%9B%D0%9E%D0%93%D0%9E.png" alt="якорь" > </h1>
+        <p></p>
+         <p></p>
+        <p class="lead"><img src="images/The-Digital-Innovation-Platform.png" alt="якорь" ></p>
+        <p><a class="btn btn-lg btn-success startjob" href="#" role="button">Начать работу</a></p>
+        </div>
+       <div class="col-md-6 col-sm-6 col-xs-6 hidden-md hidden-sm hidden-xs womanimg">
+       
+       <div id="carousel" class="carousel slide" data-ride="carousel">
+              <!--Индикаторы слайдов-->
+               
+               
+               <!--Слайды-->
+               <div class="carousel-inner">
+                   <div class="item active shift">
+                       <img src="images/Layer-89.png" alt="" class="imgshift">
+                       <div class="carousel-caption textshift">
+                          
+                           <span class="sh3c"><b>ЛУЧШИЙ НОВАТОР МЕСЯЦА</b></span><p></p>
+                           <span class="sbr1c">В этом месяце новатором месяца стала талантливая и умная</span>
+                           <p></p>
+                           <span class="sbr2c">Зинаида Чеевна</span></p>
+                       </div>
+                   </div>
+                   <div class="item shift">
+                      <img src="images/Layer-89.png" alt="" class="imgshift">
+                      <div class="carousel-caption textshift">
+                          <span class="sh3c"><b>Лучший Работник месяца</b></span><p></p>
+                          <span class="sbr1c">В этом месяце новатором месяца стала талантливая и умная</span>
+                          <p></p>
+                           <span class="sbr2c">Любовь Петровна</span>
+                   </div>
+                   </div>
+                   <div class="item shift ">
+                       <img src="images/Layer-89.png" alt="" class="imgshift">
+                       <div class="carousel-caption textshift">
+                           <span class="sh3c"><b>Третий слайд</b></span>
+                         <p></p>
+                          <span class="sbr1c">В этом месяце новатором месяца стала талантливая и умная</span>
+                          <p></p>
+                           <span class="sbr2c">Марья Павловна</span>
+                       </div>
+                   </div>
+               </div>
+               <!--Стрелки переключения слайдов-->
+               <a href="#carousel" class="left carousel-control" data-slide="prev">
+                   <img src="images/Layer-124.png" class="strelki" alt=""></a>
+               <a href="#carousel" class="right carousel-control" data-slide="next">
+                   <img src="images/Layer-124-copy.png" class="strelkir" alt="">
+               </a>
+               </a>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+       <!--Конец Джумботрона-->
